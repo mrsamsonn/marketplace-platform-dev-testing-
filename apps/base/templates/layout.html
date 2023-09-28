@@ -24,9 +24,9 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     {% if user.is_authenticated %}
-                    <li><a href="{% url 'post' %}">Post</a></li>
-                    <li><a href="{% url 'profile' %}">My Profile</a></li>
-                    <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                    <li><a href="#">Post</a></li>
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">Dashboard</a></li>
                     <li>
                         <form id="logoutForm" action="/logout" method="post">
                             {% csrf_token %}
@@ -38,8 +38,8 @@
         </div>
         <ul>
         {% else %}
-        <li><a href="{% url 'login' %}">Log in</a></li>
-        <li><a href="{% url 'signup' %}">Sign up</a></li>
+        <li><a href="#">Log in</a></li>
+        <li><a href="#">Sign up</a></li>
         {% endif %}
         </ul>
 
@@ -52,8 +52,8 @@
         <hr />
         <footer>
             <p>&copy; {{ year }} - {{ title }}</p>
-            <a href="{% url 'about' %}">About</a>
-            <a href="{% url 'contact' %}">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
         </footer>
     </div>
 
